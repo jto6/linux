@@ -93,6 +93,7 @@ case "${ARCH}" in
 		for i in Image.bz2 Image.gz Image.lz4 Image.lzma Image.lzo vmlinuz.efi ; do
 			if [ -f "${objtree}/arch/arm64/boot/${i}" ] ; then
 				cp -v -- "${objtree}/arch/arm64/boot/${i}" "${tmpdir}/boot/vmlinuz-${KERNELRELEASE}"
+        cp -v -- "${objtree}/arch/arm64/boot/Image" "${tmpdir}/boot/Image-${KERNELRELEASE}"
 				break
 			fi
 		done

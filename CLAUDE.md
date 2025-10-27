@@ -458,6 +458,30 @@ echo 'file drivers/mydriver.c +p' > /sys/kernel/debug/dynamic_debug/control
 - **UBSAN** (`CONFIG_UBSAN`): Detect undefined behavior
 - **kmemleak** (`CONFIG_DEBUG_KMEMLEAK`): Find memory leaks
 
+## Learning and Documentation
+
+### Personal Notebook
+
+This repository includes a `notebook.md` file for capturing personal learning notes and insights about the Linux kernel.
+
+**Important**: When answering questions about kernel concepts or implementation details, always ask the user if they would like you to capture the key insights and understandings in their `notebook.md` file. This helps build a personal reference guide over time.
+
+Example workflow:
+1. User asks: "How do TI K3 devices enter low power modes?"
+2. You provide a detailed answer
+3. You ask: "Would you like me to add this explanation to your notebook.md for future reference?"
+4. If yes, append the explanation to notebook.md with proper formatting and date
+
+### Additional Documentation
+
+**For deeper analysis, see:**
+- `code_analysis.md` - Comprehensive codebase analysis including:
+  - Complete subsystem architecture and design patterns
+  - Detailed data flow analysis
+  - Feature implementations with code walkthroughs
+  - Performance optimization strategies
+  - Recommended investigation prompts
+
 ## Reference Documentation
 
 Essential documentation paths (see `Documentation/` directory):
